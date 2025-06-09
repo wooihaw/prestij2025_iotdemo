@@ -8,7 +8,7 @@ def main():
     mqtt_broker = "demo.thingsboard.io"  # Adjust this to your MQTT broker
     mqtt_topic = "v1/devices/me/telemetry"
 
-    mqtt_users = ["MMU2025heart1a", 
+    mqtt_users1 =["MMU2025heart1a", 
                   "MMU2025heart1b", 
                   "MMU2025heart1c", 
                   "MMU2025heart1d", 
@@ -16,7 +16,9 @@ def main():
                   "MMU2025heart1f",
                   "MMU2025heart1g",
                   "MMU2025heart1h",
-                  "MMU2025heart2a", 
+    ]
+
+    mqtt_users2 =["MMU2025heart2a", 
                   "MMU2025heart2b", 
                   "MMU2025heart2c", 
                   "MMU2025heart2d", 
@@ -24,7 +26,9 @@ def main():
                   "MMU2025heart2f",
                   "MMU2025heart2g",
                   "MMU2025heart2h",
-                  "MMU2025heart3a", 
+    ]
+
+    mqtt_users3 =["MMU2025heart3a", 
                   "MMU2025heart3b", 
                   "MMU2025heart3c", 
                   "MMU2025heart3d", 
@@ -32,7 +36,10 @@ def main():
                   "MMU2025heart3f",
                   "MMU2025heart3g",
                   "MMU2025heart3h",                  
-                  ]
+    ]
+    
+    mqtt_users = mqtt_users1 + mqtt_users2 + mqtt_users3
+
     mqtt_clients = []
 
     for user in mqtt_users:
